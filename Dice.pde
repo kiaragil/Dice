@@ -2,7 +2,7 @@
  {
  	noLoop();
 	size(600,600);
- }
+ } //end of setup
 
  void draw()
  {
@@ -21,7 +21,7 @@
 
 	textSize(24);
 	text("Sum: "  sum, 10, 430);
- }
+ } //end of draw
 
 
  void mousePressed()

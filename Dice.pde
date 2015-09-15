@@ -27,13 +27,10 @@
  void mousePressed()
  {
  	redraw();
- }
--class Die //models one single dice cube
+ } //end of mouse
 
 class Die 
  {
-	//variable declarations here
-	Die(int x, int y) //constructor
 	int dieX;
 	int dieY;
 
@@ -44,11 +41,10 @@ class Die
 		//variable initializations here
 		dieX = x;
 		dieY = y;
- 	}
+ 	} //end of constructor
 
  	void roll()
  	{
-		//your code here
 		randRoll = (int)(Math.random()*6)1;
 
 		int x = dieX  15;
@@ -67,37 +63,46 @@ class Die
 			ellipse(x20, centerY, 5, 5);
 			ellipse(x, bottomY, 5, 5);
 			ellipse(x20, bottomY, 5, 5);
-		} else if (randRoll == 5){
+		} 
+		
+		else if (randRoll == 5){
 			//dots: 5
 			ellipse(x, topY, 5, 5);
 			ellipse(x20, topY, 5, 5);
 			ellipse(centerX, centerY, 5, 5);
 			ellipse(x, bottomY, 5, 5);
 			ellipse(x20, bottomY, 5, 5);
-		} else if (randRoll == 4){
+		} 
+		
+		else if (randRoll == 4){
 			//dots: 4
 			ellipse(x, topY, 5, 5);
 			ellipse(x20, topY, 5, 5);
 			ellipse(x, bottomY, 5, 5);
 			ellipse(x20, bottomY, 5, 5);	
-		} else if (randRoll == 3){
+		} 
+		
+		else if (randRoll == 3){
 			//dots: 3
 			ellipse(x20, topY, 5, 5);
 			ellipse(centerX, centerY, 5, 5);
 			ellipse(x, bottomY, 5, 5);
-		} else if (randRoll == 2){
+		} 
+		
+		else if (randRoll == 2){
 			//dots: 2
 			ellipse(x20, topY, 5, 5); 
 			ellipse(x, bottomY, 5, 5);
-		} else {
+		} 
+		
+		else {
 			//dots: 1
 			ellipse(dieX25, centerY, 5, 5);
-		}
- 	}
+		} 
+ 	} // end of roll
 
  	void show()
  	{
-		//your code here
 		fill(255);
 		stroke(4);
 		rect(dieX, dieY, 50, 50); 
@@ -105,6 +110,6 @@ class Die
 		
 		fill(255);
 		textSize(18);
- 	}
- }
+ 	} //end of show
+ } //end of class
 

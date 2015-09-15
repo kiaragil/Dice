@@ -17,7 +17,7 @@ Die joe;
   } //end of j
   
   textSize(24);
-  text("Sum: "  sum, 10, 430);
+  text("Sum: " + sum, 10, 550);
  } //end of draw
 
 
@@ -45,6 +45,7 @@ class Die{
     int bottomY = dieY + 35;
 
     fill(255, 0, 0);
+    noStroke();
 
     if (randRoll == 6){
       //dots: 6
@@ -94,8 +95,8 @@ class Die{
 
 void show(){
     fill(255);
-    stroke(4);
-    rect(dieX, dieY, 50, 50,5); 
+    
+    rect(dieX, dieY, 50, 50,6); 
     roll();
     
     fill(255);
